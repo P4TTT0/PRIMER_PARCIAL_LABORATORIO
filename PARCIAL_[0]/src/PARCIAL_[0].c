@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "desarrollo.h"
 #include "censo.h"
 
@@ -25,11 +26,13 @@ int main(void) {
 	int indice;
 	int indiceEspacioLleno;
 	int indiceViviendaEliminada;
+	int error;
 
 	opcion = 0;
 	indice = 0;
 	indiceEspacioLleno = 0;
 	indiceViviendaEliminada = 0;
+	error = 0;
 
 	inicializarViviendas(listaViviendas, LEN);
 
@@ -52,7 +55,7 @@ int main(void) {
 		switch (opcion)
 		{
 			case 1:
-				indice = cargarVivienda(listaViviendas, LEN, opcionesViviendas, censistas);
+				indice = cargarVivienda(listaViviendas, LEN, opcionesViviendas, censistas, &error);
 
 				if (indice == OCUPADO)
 				{
@@ -123,6 +126,12 @@ int main(void) {
 					printf("|<(Imposible listar)>|\n");
 					system("pause");
 				}
+			break;
+
+			case 5:
+				clear();
+				listarCensistas(censistas, 3);
+				system("pause");
 			break;
 		}
 

@@ -8,10 +8,6 @@
 #ifndef DESARROLLO_H_
 #define DESARROLLO_H_
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "censo.h"
-
 int generarId();
 
 void clear();

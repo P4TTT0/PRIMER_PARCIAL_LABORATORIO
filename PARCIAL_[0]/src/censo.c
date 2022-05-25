@@ -6,6 +6,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "desarrollo.h"
 #include "censo.h"
 #include "input.h"
@@ -20,7 +21,7 @@ void inicializarViviendas(sVivienda* lista, int longitud)
 	}
 }
 
-sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error)
 {
 	sVivienda unaVivienda;
 
@@ -36,26 +37,42 @@ sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legaj
 	int banderaCantidadHabitaciones;
 	int banderaTipoVivienda;
 	int banderaLegajoCensista;
-	int bandera;
 	int indiceOpcionVivienda;
 	int indiceNombreCensista;
+	int bandera;
 
 	opcion = 0;
 	validacion = 0;
+	banderaCalle = 0;
+	banderaCantidadPersonas = 0;
+	banderaCantidadHabitaciones = 0;
+	banderaTipoVivienda = 0;
+	banderaLegajoCensista = 0;
+	bandera = 0;
+	*error= 0;
 
 	clear();
 	do
 	{
 		clear();
-		printf("|[> 1 <] --| INGRESAR VIVIENDA <|\n\n"
-				"|[1] >- | INGRESAR CALLE <[%s]|\n"
-				"|[2] >- | INGRESAR CANTIDAD DE PERSONAS <[%d]|\n"
+		printf("|[> 1 <] --| INGRESAR VIVIENDA <|\n\n");
+
+		if (banderaCalle == 0)
+		{
+			printf("|[1] >- | INGRESAR CALLE <[]|\n");
+		}
+		else
+		{
+			printf("|[1] >- | INGRESAR CALLE <[%s]|\n"
+					, unaVivienda.calle);
+		}
+
+		printf("|[2] >- | INGRESAR CANTIDAD DE PERSONAS <[%d]|\n"
 				"|[3] >- | INGRESAR CANTIDAD DE HABITACIONES <[%d]|\n"
 				"|[4] >- | INGRESAR TIPO DE VIVIENDA <[%d]|\n"
 				"|[5] >- | INGRESAR LEGAJO DE CENSISTA <[%d]|\n"
 				"|[6] >- | SALIR Y GUARDAR <|\n\n"
 			    "|[INGRESE LA OPCION]<|:"
-				, unaVivienda.calle
 				, unaVivienda.cantidadPersonas
 				, unaVivienda.cantidadHabitaciones
 				, unaVivienda.tipoVivienda
@@ -188,6 +205,7 @@ sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legaj
 					clear();
 					printf("|[> ERROR <] --| No se pudo guardar (FALTAN DATOS) <|\n\n");
 					system("pause");
+					*error = 1;
 				}
 			break;
 
@@ -238,15 +256,18 @@ int buscarEspacioLleno(sVivienda* lista, int longitud)
 		return indice;
 }
 
-int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error)
 {
 	int indice;
+	sVivienda vivienda;
 
 	indice = buscarEspacioVacio(lista, longitud);
 
-	if (indice != OCUPADO)
+	vivienda = ingresarVivienda(listaOpcionViviendas, legajosCensista, error);
+
+	if (indice != OCUPADO && *error == 0)
 	{
-		(*(lista + indice)) = ingresarVivienda(listaOpcionViviendas, legajosCensista);
+		(*(lista + indice)) = vivienda;
 	}
 
 	return indice;
@@ -518,7 +539,7 @@ int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionVi
 
 		if ((*(lista + i)).idVivienda != VACIO)
 		{
-				printf("||%-7d||%-19s||%-10d||%-14d||%-20s||%d | %-11s||\n"
+				printf("||%-7d||%-19s||%-10d||%-14d||%-20s||%d | %-11s||\n" //
 				, (*(lista + i)).idVivienda
 				, (*(lista + i)).calle
 				, (*(lista + i)).cantidadPersonas
@@ -596,6 +617,28 @@ int ordenarViviendas(sVivienda* lista, int longitud)
 			}
 		}
 	}
+
+	return 0;
+}
+
+int listarCensistas(sCensista* legajosCensista, int longitud)
+{
+	int i;
+
+	printf("======================================================\n"
+		   "||LEGAJO     ||NOMBRE     ||EDAD    ||NUMERO        ||\n"
+		   "======================================================\n");
+
+	for (i = 0; i < longitud; i++)
+	{
+		printf("||%-11d||%-11s||%-8d||%-14s||\n"
+				, (*(legajosCensista + i)).legajoCensista
+				, (*(legajosCensista + i)).nombre
+				, (*(legajosCensista + i)).edad
+				, (*(legajosCensista + i)).telefono);
+	}
+
+	printf("======================================================\n");
 
 	return 0;
 }

@@ -39,13 +39,13 @@ typedef struct
 
 void inicializarViviendas(sVivienda* lista, int longitud);
 
-sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
 
 int buscarEspacioVacio(sVivienda* lista, int longitud);
 
 int buscarEspacioLleno(sVivienda* lista, int longitud);
 
-int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
 
 int indiceTipoVivienda(int indiceTipoVivienda, sTipoVivienda* listaOpcionViviendas, int longitudOpciones);
 
@@ -60,5 +60,7 @@ int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listOpcionViv
 int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
 
 int ordenarViviendas(sVivienda* lista, int longitud);
+
+int listarCensistas(sCensista* legajosCensista, int longitud);
 
 #endif /* CENSO_H_ */

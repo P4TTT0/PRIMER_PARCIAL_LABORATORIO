@@ -970,3 +970,484 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarro
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
 gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+13:07:17 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ordenarViviendas':
+..\src\censo.c:581:9: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  581 |     if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) > 0)
+      |         ^~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:08:01 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:08:01 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:10:16 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ordenarViviendas':
+..\src\censo.c:581:9: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  581 |     if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) > 0)
+      |         ^~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:10:52 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:12:10 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ordenarViviendas':
+..\src\censo.c:581:9: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  581 |     if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) > 0)
+      |         ^~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:13:27 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:13:42 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:13:46 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:13:53 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:15:04 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:15:13 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:26:05 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file PARCIAL_[0].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:26:10 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+17:55:44 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+17:56:18 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+17:56:50 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+17:57:23 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:01:41 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:255:25: error: too few arguments to function 'ingresarVivienda'
+  255 |   (*(lista + indice)) = ingresarVivienda(listaOpcionViviendas, legajosCensista);
+      |                         ^~~~~~~~~~~~~~~~
+..\src\censo.c:24:11: note: declared here
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* bandera)
+      |           ^~~~~~~~~~~~~~~~
+18:02:06 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:255:81: warning: passing argument 3 of 'ingresarVivienda' from incompatible pointer type [-Wincompatible-pointer-types]
+  255 |   (*(lista + indice)) = ingresarVivienda(listaOpcionViviendas, legajosCensista, &bandera);
+      |                                                                                 ^~~~~~~~
+      |                                                                                 |
+      |                                                                                 int **
+..\src\censo.c:24:98: note: expected 'int *' but argument is of type 'int **'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* bandera)
+      |                                                                                             ~~~~~^~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:02:26 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:255:81: warning: passing argument 3 of 'ingresarVivienda' makes pointer from integer without a cast [-Wint-conversion]
+  255 |   (*(lista + indice)) = ingresarVivienda(listaOpcionViviendas, legajosCensista, *bandera);
+      |                                                                                 ^~~~~~~~
+      |                                                                                 |
+      |                                                                                 int
+..\src\censo.c:24:98: note: expected 'int *' but argument is of type 'int'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* bandera)
+      |                                                                                             ~~~~~^~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:02:33 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:04:04 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:248:5: error: conflicting types for 'cargarVivienda'
+  248 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* bandera)
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:48:5: note: previous declaration of 'cargarVivienda' was here
+   48 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+      |     ^~~~~~~~~~~~~~
+18:04:30 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:29:6: warning: variable 'bandera' set but not used [-Wunused-but-set-variable]
+   29 |  int bandera;
+      |      ^~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:04:39 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:34:2: error: 'bandera' undeclared (first use in this function)
+   34 |  bandera = 0;
+      |  ^~~~~~~
+..\src\PARCIAL_[0].c:34:2: note: each undeclared identifier is reported only once for each function it appears in
+18:04:45 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:07:08 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:2: error: invalid type argument of unary '*' (have 'int')
+   52 |  *error = 0;
+      |  ^~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+..\src\censo.c: At top level:
+..\src\censo.c:250:5: error: conflicting types for 'cargarVivienda'
+  250 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error)
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:48:5: note: previous declaration of 'cargarVivienda' was here
+   48 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+      |     ^~~~~~~~~~~~~~
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:258:81: warning: passing argument 3 of 'ingresarVivienda' makes integer from pointer without a cast [-Wint-conversion]
+  258 |   (*(lista + indice)) = ingresarVivienda(listaOpcionViviendas, legajosCensista, &error);
+      |                                                                                 ^~~~~~
+      |                                                                                 |
+      |                                                                                 int **
+..\src\censo.c:24:97: note: expected 'int' but argument is of type 'int **'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |                                                                                             ~~~~^~~~~
+18:07:19 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:2: error: invalid type argument of unary '*' (have 'int')
+   52 |  *error = 0;
+      |  ^~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+..\src\censo.c: At top level:
+..\src\censo.c:250:5: error: conflicting types for 'cargarVivienda'
+  250 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error)
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:48:5: note: previous declaration of 'cargarVivienda' was here
+   48 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+      |     ^~~~~~~~~~~~~~
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:258:81: warning: passing argument 3 of 'ingresarVivienda' makes integer from pointer without a cast [-Wint-conversion]
+  258 |   (*(lista + indice)) = ingresarVivienda(listaOpcionViviendas, legajosCensista, error);
+      |                                                                                 ^~~~~
+      |                                                                                 |
+      |                                                                                 int *
+..\src\censo.c:24:97: note: expected 'int' but argument is of type 'int *'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |                                                                                             ~~~~^~~~~
+18:09:13 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:2: error: invalid type argument of unary '*' (have 'int')
+   52 |  *error = 0;
+      |  ^~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+..\src\censo.c: At top level:
+..\src\censo.c:250:5: error: conflicting types for 'cargarVivienda'
+  250 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error)
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:48:5: note: previous declaration of 'cargarVivienda' was here
+   48 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+      |     ^~~~~~~~~~~~~~
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:257:69: warning: passing argument 3 of 'ingresarVivienda' makes integer from pointer without a cast [-Wint-conversion]
+  257 |  vivienda = ingresarVivienda(listaOpcionViviendas, legajosCensista, error);
+      |                                                                     ^~~~~
+      |                                                                     |
+      |                                                                     int *
+..\src\censo.c:24:97: note: expected 'int' but argument is of type 'int *'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |                                                                                             ~~~~^~~~~
+18:09:36 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:56:14: error: too few arguments to function 'cargarVivienda'
+   56 |     indice = cargarVivienda(listaViviendas, LEN, opcionesViviendas, censistas);
+      |              ^~~~~~~~~~~~~~
+In file included from ..\src\PARCIAL_[0].c:15:
+..\src\censo.h:48:5: note: declared here
+   48 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |     ^~~~~~~~~~~~~~
+18:10:05 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:2: error: invalid type argument of unary '*' (have 'int')
+   52 |  *error = 0;
+      |  ^~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:257:69: warning: passing argument 3 of 'ingresarVivienda' makes integer from pointer without a cast [-Wint-conversion]
+  257 |  vivienda = ingresarVivienda(listaOpcionViviendas, legajosCensista, error);
+      |                                                                     ^~~~~
+      |                                                                     |
+      |                                                                     int *
+..\src\censo.c:24:97: note: expected 'int' but argument is of type 'int *'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |                                                                                             ~~~~^~~~~
+18:10:14 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:2: error: invalid type argument of unary '*' (have 'int')
+   52 |  *error = 0;
+      |  ^~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:257:69: warning: passing argument 3 of 'ingresarVivienda' makes integer from pointer without a cast [-Wint-conversion]
+  257 |  vivienda = ingresarVivienda(listaOpcionViviendas, legajosCensista, &error);
+      |                                                                     ^~~~~~
+      |                                                                     |
+      |                                                                     int **
+..\src\censo.c:24:97: note: expected 'int' but argument is of type 'int **'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |                                                                                             ~~~~^~~~~
+18:10:23 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:2: error: invalid type argument of unary '*' (have 'int')
+   52 |  *error = 0;
+      |  ^~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+18:10:45 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:3: error: invalid type argument of unary '*' (have 'int')
+   52 |  (*(error))= 0;
+      |   ^~~~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+18:10:51 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:52:2: error: invalid type argument of unary '*' (have 'int')
+   52 |  *(error)= 0;
+      |  ^~~~~~~~
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+18:11:29 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:199:6: error: invalid type argument of unary '*' (have 'int')
+  199 |      *error = 1;
+      |      ^~~~~~
+18:11:36 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:24:11: error: conflicting types for 'ingresarVivienda'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int error)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\censo.c:11:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error);
+      |           ^~~~~~~~~~~~~~~~
+18:12:14 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:257:69: warning: passing argument 3 of 'ingresarVivienda' makes pointer from integer without a cast [-Wint-conversion]
+  257 |  vivienda = ingresarVivienda(listaOpcionViviendas, legajosCensista, *error);
+      |                                                                     ^~~~~~
+      |                                                                     |
+      |                                                                     int
+..\src\censo.c:24:98: note: expected 'int *' but argument is of type 'int'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error)
+      |                                                                                             ~~~~~^~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:12:24 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:257:69: warning: passing argument 3 of 'ingresarVivienda' from incompatible pointer type [-Wincompatible-pointer-types]
+  257 |  vivienda = ingresarVivienda(listaOpcionViviendas, legajosCensista, &error);
+      |                                                                     ^~~~~~
+      |                                                                     |
+      |                                                                     int **
+..\src\censo.c:24:98: note: expected 'int *' but argument is of type 'int **'
+   24 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista, int* error)
+      |                                                                                             ~~~~~^~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:12:42 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:16:29 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:70:54: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+   70 |   printf("|[2] >- | INGRESAR CANTIDAD DE PERSONAS <[%d]|\n"
+      |                                                     ~^
+      |                                                      |
+      |                                                      int
+      |                                                     %s
+......
+   76 |     , unaVivienda.calle
+      |       ~~~~~~~~~~~~~~~~~                               
+      |                  |
+      |                  char *
+..\src\censo.c:70:10: warning: too many arguments for format [-Wformat-extra-args]
+   70 |   printf("|[2] >- | INGRESAR CANTIDAD DE PERSONAS <[%d]|\n"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:16:44 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:17:05 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
