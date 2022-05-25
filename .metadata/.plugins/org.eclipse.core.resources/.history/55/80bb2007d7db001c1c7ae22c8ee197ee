@@ -323,6 +323,7 @@ int modificarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcion
 	validacion = 0;
 	bandera = 0;
 
+	clear();
 	printf("|[> 2 <] --| MODIFICAR VIVIENDA <|\n\n");
 	listarViviendas(lista, longitud, listaOpcionViviendas, legajosCensista);
 	printf("|[INGRESE EL [ID] DE LA VIVIENDA A MODIFICAR]<|:");
@@ -534,36 +535,11 @@ int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionVi
 	return 0;
 }
 
-int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+int eliminarVivienda(sVivienda* lista, int longitud)
 {
 	int id;
 	int indiceVivienda;
 
 	id = 0;
-	indiceVivienda = 0;
-
-	printf("|[> 3 <] --| ELIMINAR VIVIENDA <|\n\n");
-	listarViviendas(lista, longitud, listaOpcionViviendas, legajosCensista);
-	printf("|[INGRESE EL [ID] DE LA VIVIENDA A ELIMINAR]<|:");
-
-	fflush(stdin);
-	scanf("%d", &id);
-
-	indiceVivienda = buscarPasajeroPorId(lista, longitud, id);
-
-	while (indiceVivienda == -1)
-	{
-		printf("|[> 3 <] --| ELIMINAR VIVIENDA <|\n\n"
-			   "|<ERROR<| (Vivienda no encontrada)"
-			   "|[INGRESE EL [ID] DE LA VIVIENDA A ELIMINAR]<|:");
-
-		fflush(stdin);
-		scanf("%d", &id);
-
-		indiceVivienda = buscarPasajeroPorId(lista, longitud, id);
-	}
-
-	(*(lista + indiceVivienda)).idVivienda = VACIO;
-
-	return indiceVivienda;
+	indicieVivienda = 0;
 }

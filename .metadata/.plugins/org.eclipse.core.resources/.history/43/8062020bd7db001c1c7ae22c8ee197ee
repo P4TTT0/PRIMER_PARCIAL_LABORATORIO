@@ -24,12 +24,10 @@ int main(void) {
 	int opcion;
 	int indice;
 	int indiceEspacioLleno;
-	int indiceViviendaEliminada;
 
 	opcion = 0;
 	indice = 0;
 	indiceEspacioLleno = 0;
-	indiceViviendaEliminada = 0;
 
 	inicializarViviendas(listaViviendas, LEN);
 
@@ -68,7 +66,6 @@ int main(void) {
 
 				if (indiceEspacioLleno != VACIO)
 				{
-					clear();
 					modificarVivienda(listaViviendas, LEN, opcionesViviendas, censistas);
 				}
 				else
@@ -76,32 +73,6 @@ int main(void) {
 					clear();
 					printf("|<------   | - NO HAY VIVIENDAS EN LISTA - |   ------>|\n\n");
 					printf("|<(Imposible modificar)>|\n");
-					system("pause");
-				}
-			break;
-
-			case 3:
-				indiceEspacioLleno = buscarEspacioLleno(listaViviendas, LEN);
-
-				if (indiceEspacioLleno != VACIO)
-				{
-					clear();
-					indiceViviendaEliminada = eliminarVivienda(listaViviendas, LEN, opcionesViviendas, censistas);
-
-					if (indiceViviendaEliminada != -1)
-					{
-						clear();
-						printf("|<------   | - PASAJERO ELIMINADO - |   ------>|\n\n"
-								"|<POSICION DEL PASAJERO>|: [%d]\n"
-								, indiceViviendaEliminada);
-						system("pause");
-					}
-				}
-				else
-				{
-					clear();
-					printf("|<------   | - NO HAY VIVIENDAS EN LISTA - |   ------>|\n\n");
-					printf("|<(Imposible eliminar)>|\n");
 					system("pause");
 				}
 			break;

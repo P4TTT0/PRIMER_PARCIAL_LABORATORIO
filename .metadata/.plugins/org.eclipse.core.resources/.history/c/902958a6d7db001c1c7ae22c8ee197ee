@@ -534,7 +534,7 @@ int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionVi
 	return 0;
 }
 
-int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda listaOpcionViviendas, sCensista legajosCensista)
 {
 	int id;
 	int indiceVivienda;
@@ -562,8 +562,4 @@ int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionV
 
 		indiceVivienda = buscarPasajeroPorId(lista, longitud, id);
 	}
-
-	(*(lista + indiceVivienda)).idVivienda = VACIO;
-
-	return indiceVivienda;
 }

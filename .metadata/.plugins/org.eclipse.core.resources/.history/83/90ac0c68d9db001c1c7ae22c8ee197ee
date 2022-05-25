@@ -24,7 +24,7 @@ int main(void) {
 	int opcion;
 	int indice;
 	int indiceEspacioLleno;
-	int indiceViviendaEliminada;
+	int indiceViviendaEliminada
 
 	opcion = 0;
 	indice = 0;

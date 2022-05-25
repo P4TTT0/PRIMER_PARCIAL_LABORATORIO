@@ -893,3 +893,57 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c"
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
 gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:10:37 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'eliminarVivienda':
+..\src\censo.c:546:35: error: incompatible type for argument 3 of 'listarViviendas'
+  546 |  listarViviendas(lista, longitud, listaOpcionViviendas, legajosCensista);
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   sTipoVivienda {aka struct <anonymous>}
+..\src\censo.c:504:68: note: expected 'sTipoVivienda *' {aka 'struct <anonymous> *'} but argument is of type 'sTipoVivienda' {aka 'struct <anonymous>'}
+  504 | int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+      |                                                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+..\src\censo.c:546:57: error: incompatible type for argument 4 of 'listarViviendas'
+  546 |  listarViviendas(lista, longitud, listaOpcionViviendas, legajosCensista);
+      |                                                         ^~~~~~~~~~~~~~~
+      |                                                         |
+      |                                                         sCensista {aka struct <anonymous>}
+..\src\censo.c:504:101: note: expected 'sCensista *' {aka 'struct <anonymous> *'} but argument is of type 'sCensista' {aka 'struct <anonymous>'}
+  504 | int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+      |                                                                                          ~~~~~~~~~~~^~~~~~~~~~~~~~~
+00:12:31 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:87:6: warning: implicit declaration of function 'eliminarPasajero' [-Wimplicit-function-declaration]
+   87 |      eliminarPasajero(listaViviendas, LEN, opcionesViviendas, censistas);
+      |      ^~~~~~~~~~~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\PARCIAL_[0].o: in function `main':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/PARCIAL_[0].c:87: undefined reference to `eliminarPasajero'
+collect2.exe: error: ld returned 1 exit status
+00:12:51 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:18:41 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:29:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'opcion'
+   29 |  opcion = 0;
+      |  ^~~~~~
+..\src\PARCIAL_[0].c:32:2: error: 'indiceViviendaEliminada' undeclared (first use in this function)
+   32 |  indiceViviendaEliminada = 0;
+      |  ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\PARCIAL_[0].c:32:2: note: each undeclared identifier is reported only once for each function it appears in
+00:18:55 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
