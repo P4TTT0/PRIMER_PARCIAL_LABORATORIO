@@ -947,3 +947,26 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIA
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
 gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:24:28 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:25:33 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:26:00 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:38:35 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ordenarViviendas':
+..\src\censo.c:581:9: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  581 |     if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) > 0)
+      |         ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 

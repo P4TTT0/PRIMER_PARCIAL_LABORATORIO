@@ -59,6 +59,4 @@ int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listOpcionViv
 
 int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
 
-int ordenarViviendas(sVivienda* lista, int longitud);
-
 #endif /* CENSO_H_ */

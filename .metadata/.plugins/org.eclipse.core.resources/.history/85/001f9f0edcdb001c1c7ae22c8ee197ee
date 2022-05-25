@@ -596,6 +596,4 @@ int ordenarViviendas(sVivienda* lista, int longitud)
 			}
 		}
 	}
-
-	return 0;
 }

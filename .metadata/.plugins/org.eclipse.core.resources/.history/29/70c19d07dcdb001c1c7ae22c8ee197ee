@@ -586,16 +586,14 @@ int ordenarViviendas(sVivienda* lista, int longitud)
 				}
 				if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) == 0)
 				{
-					if ((*(lista + i)).cantidadPersonas > (*(lista + j)).cantidadPersonas)
+					if (list[i].idTypePassenger > list[j].idTypePassenger)
 					{
-						aux = (*(lista + i));
-						(*(lista + i)) = (*(lista + j));
-						(*(lista + j)) = aux;
+						aux = list[i];
+						list[i] = list[j];
+						list[j] = aux;
 					}
 				}
 			}
 		}
 	}
-
-	return 0;
 }

@@ -105,25 +105,6 @@ int main(void) {
 					system("pause");
 				}
 			break;
-
-			case 4:
-				indiceEspacioLleno = buscarEspacioLleno(listaViviendas, LEN);
-
-				if (indiceEspacioLleno != VACIO)
-				{
-					clear();
-					ordenarViviendas(listaViviendas, LEN);
-					listarViviendas(listaViviendas, LEN, opcionesViviendas, censistas);
-					system("pause");
-				}
-				else
-				{
-					clear();
-					printf("|<------   | - NO HAY VIVIENDAS EN LISTA - |   ------>|\n\n");
-					printf("|<(Imposible listar)>|\n");
-					system("pause");
-				}
-			break;
 		}
 
 	}while(opcion != 6);

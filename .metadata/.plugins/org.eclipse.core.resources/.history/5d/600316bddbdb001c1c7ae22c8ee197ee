@@ -578,24 +578,22 @@ int ordenarViviendas(sVivienda* lista, int longitud)
 		{
 			for (int j = i + 1; j < longitud; j++)
 			{
-				if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) > 0)
+				if (strcmp((*(lista + i)).lastName, list[j].lastName) > 0)
 				{
-					aux = (*(lista + i));
-					(*(lista + i)) = (*(lista + j));
-					(*(lista + j)) = aux;
+					aux = list[i];
+					list[i] = list[j];
+					list[j] = aux;
 				}
-				if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) == 0)
+				if (strcmp(list[i].lastName, list[j].lastName) == 0)
 				{
-					if ((*(lista + i)).cantidadPersonas > (*(lista + j)).cantidadPersonas)
+					if (list[i].idTypePassenger > list[j].idTypePassenger)
 					{
-						aux = (*(lista + i));
-						(*(lista + i)) = (*(lista + j));
-						(*(lista + j)) = aux;
+						aux = list[i];
+						list[i] = list[j];
+						list[j] = aux;
 					}
 				}
 			}
 		}
 	}
-
-	return 0;
 }

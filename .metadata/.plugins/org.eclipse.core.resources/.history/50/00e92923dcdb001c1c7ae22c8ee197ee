@@ -112,7 +112,7 @@ int main(void) {
 				if (indiceEspacioLleno != VACIO)
 				{
 					clear();
-					ordenarViviendas(listaViviendas, LEN);
+					ordenarViviendas(listaViviendas, LEN)
 					listarViviendas(listaViviendas, LEN, opcionesViviendas, censistas);
 					system("pause");
 				}

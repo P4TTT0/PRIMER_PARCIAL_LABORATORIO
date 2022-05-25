@@ -567,35 +567,3 @@ int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionV
 
 	return indiceVivienda;
 }
-
-int ordenarViviendas(sVivienda* lista, int longitud)
-{
-	sVivienda aux;
-
-	if (lista != NULL || longitud >= 0)
-	{
-		for (int i = 0; i < longitud - 1; i++)
-		{
-			for (int j = i + 1; j < longitud; j++)
-			{
-				if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) > 0)
-				{
-					aux = (*(lista + i));
-					(*(lista + i)) = (*(lista + j));
-					(*(lista + j)) = aux;
-				}
-				if (strcmp((*(lista + i)).calle, (*(lista + j)).calle) == 0)
-				{
-					if ((*(lista + i)).cantidadPersonas > (*(lista + j)).cantidadPersonas)
-					{
-						aux = (*(lista + i));
-						(*(lista + i)) = (*(lista + j));
-						(*(lista + j)) = aux;
-					}
-				}
-			}
-		}
-	}
-
-	return 0;
-}
