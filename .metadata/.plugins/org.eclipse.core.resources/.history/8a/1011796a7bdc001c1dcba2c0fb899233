@@ -96,8 +96,8 @@ int main(void) {
 						clear();
 						animacionCargando();
 						clear();
-						printf("|<------   | - VIVIENDA ELIMINADA - |   ------>|\n\n"
-								"|<POSICION DE LA VIVIENDA>|: [%d]\n"
+						printf("|<------   | - PASAJERO ELIMINADO - |   ------>|\n\n"
+								"|<POSICION DEL PASAJERO>|: [%d]\n"
 								, indiceViviendaEliminada);
 						system("pause");
 					}
