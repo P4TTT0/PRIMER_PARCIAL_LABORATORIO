@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : PARCIAL_[0].c
+ Author      : P4TTT0
+ Version     :
+ Copyright   : TTT
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int opcion;
+	do
+	{
+		printf("|<------   | - MENU - |   ------>|\n\n");
+	}while(opcion != 6);
+
+	return EXIT_SUCCESS;
+}

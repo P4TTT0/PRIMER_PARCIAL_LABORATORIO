@@ -1,0 +1,45 @@
+/*
+ * censo.h
+ *
+ *  Created on: 23 may. 2022
+ *      Author: PEREZ CARDENAL PATRICIO
+ */
+
+#ifndef CENSO_H_
+#define CENSO_H_
+
+#define TAM 30
+#define LEN 2000
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "desarrollo.h"
+
+typedef struct
+{
+	int idVivienda;
+	char calle[25];
+	int cantidadPersonas;
+	int cantidadHabitaciones;
+	int tipoVivienda;
+	int legajoCensista;
+}sVivienda;
+
+typedef struct
+{
+	int legajoCensista;
+	char nombre[TAM];
+	int edad;
+	int telefono;
+}sCensista;
+
+typedef struct
+{
+	int tipoVivienda;
+	char descripcionVivienda[TAM];
+}sTipoVivienda;
+
+int inicializarViviendas(sVivienda* list, int len);
+
+sVivienda ingresarVivienda();
+#endif /* CENSO_H_ */

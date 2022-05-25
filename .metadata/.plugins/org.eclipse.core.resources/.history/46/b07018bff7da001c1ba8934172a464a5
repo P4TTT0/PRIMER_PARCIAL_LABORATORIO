@@ -1,0 +1,24 @@
+/*
+ * desarrollo.h
+ *
+ *  Created on: 23 may. 2022
+ *      Author: PEREZ CARDENAL PATRICIO
+ */
+
+#ifndef DESARROLLO_H_
+#define DESARROLLO_H_
+
+#include "censo.h";
+
+int id;
+
+id = 20000;
+
+int generarId()
+{
+	id++;
+
+	return id;
+}
+
+#endif /* DESARROLLO_H_ */

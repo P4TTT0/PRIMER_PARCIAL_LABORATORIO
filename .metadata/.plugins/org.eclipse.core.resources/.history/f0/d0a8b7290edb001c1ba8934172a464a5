@@ -1,0 +1,46 @@
+/*
+ * input.c
+ *
+ *  Created on: 23 may. 2022
+ *      Author: patri
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include "desarrollo.h"
+#include "censo.h"
+
+int validarCaracteres (char string[])
+{
+	int validator;
+	int i;
+
+	validator = 1;
+
+	for(i = 0; i < strlen(string); i++)
+	{
+		if (isdigit(string[i]) || isalpha(string[i]) == 0)
+		{
+			validator = 0;
+		}
+	}
+	return validator;
+}
+
+int validarNumeros (char numeros[])
+{
+	int validator;
+	int i;
+
+	validator = 1;
+
+	for(i = 0; i < strlen(numeros); i++)
+	{
+		if (!(isdigit(numeros[i])))
+		{
+			validator = 0;
+		}
+	}
+	return validator;
+}

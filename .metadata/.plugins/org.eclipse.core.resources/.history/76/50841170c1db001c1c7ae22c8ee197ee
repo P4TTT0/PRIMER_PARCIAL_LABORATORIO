@@ -1,0 +1,17 @@
+/*
+ * input.h
+ *
+ *  Created on: 23 may. 2022
+ *      Author: patri
+ */
+
+#ifndef INPUT_H_
+#define INPUT_H_
+
+int validarCaracteres (char* string);
+
+int validarNumeros(char* numeros);
+
+int pedirEntero(char* mensaje);
+
+#endif /* INPUT_H_ */

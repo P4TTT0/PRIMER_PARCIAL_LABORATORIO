@@ -1,0 +1,833 @@
+22:39:40 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" 
+Info: Nothing to build for PARCIAL_[0]
+23:47:55 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" 
+23:48:26 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" 
+23:55:56 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+..\src\input.c: In function 'validateCharacter':
+..\src\input.c:19:17: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   19 |  for(i = 0; i < strlen(string); i++)
+      |                 ^~~~~~
+..\src\input.c:19:17: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\input.c:10:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    9 | #include "desarrollo.h"
+  +++ |+#include <string.h>
+   10 | #include "censo.h"
+..\src\input.c:21:7: warning: implicit declaration of function 'isdigit' [-Wimplicit-function-declaration]
+   21 |   if (isdigit(string[i]) || isalpha(string[i]) == 0)
+      |       ^~~~~~~
+..\src\input.c:21:29: warning: implicit declaration of function 'isalpha' [-Wimplicit-function-declaration]
+   21 |   if (isdigit(string[i]) || isalpha(string[i]) == 0)
+      |                             ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:51:18: warning: implicit declaration of function 'validarCaracteres' [-Wimplicit-function-declaration]
+   51 |     validacion = validarCaracteres(unaVivienda.calle);
+      |                  ^~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\censo.o: in function `ingresarVivienda':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:51: undefined reference to `validarCaracteres'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:59: undefined reference to `validarCaracteres'
+collect2.exe: error: ld returned 1 exit status
+23:56:32 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+..\src\input.c: In function 'validateCharacter':
+..\src\input.c:20:17: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   20 |  for(i = 0; i < strlen(string); i++)
+      |                 ^~~~~~
+..\src\input.c:20:17: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\input.c:11:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   10 | #include "desarrollo.h"
+  +++ |+#include <string.h>
+   11 | #include "censo.h"
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\censo.o: in function `ingresarVivienda':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:51: undefined reference to `validarCaracteres'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:59: undefined reference to `validarCaracteres'
+collect2.exe: error: ld returned 1 exit status
+23:56:46 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\censo.o: in function `ingresarVivienda':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:51: undefined reference to `validarCaracteres'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:59: undefined reference to `validarCaracteres'
+collect2.exe: error: ld returned 1 exit status
+23:57:08 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\censo.o: in function `ingresarVivienda':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:52: undefined reference to `validarCaracteres'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/censo.c:60: undefined reference to `validarCaracteres'
+collect2.exe: error: ld returned 1 exit status
+23:57:29 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:01:50 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:68:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   68 |     scanf("%s", unaVivienda.cantidadPersonas);
+      |            ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             |              |
+      |             char *         int
+..\src\censo.c:69:44: warning: passing argument 1 of 'validarNumeros' makes pointer from integer without a cast [-Wint-conversion]
+   69 |     validacion = validarNumeros(unaVivienda.cantidadPersonas);
+      |                                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            int
+In file included from ..\src\censo.c:11:
+..\src\input.h:13:26: note: expected 'char *' but argument is of type 'int'
+   13 | int validarNumeros (char numeros[]);
+      |                     ~~~~~^~~~~~~~~
+..\src\censo.c:76:14: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   76 |      scanf("%s", unaVivienda.cantidadPersonas);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |              |
+      |              char *         int
+..\src\censo.c:77:45: warning: passing argument 1 of 'validarNumeros' makes pointer from integer without a cast [-Wint-conversion]
+   77 |      validacion = validarNumeros(unaVivienda.cantidadPersonas);
+      |                                  ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             int
+In file included from ..\src\censo.c:11:
+..\src\input.h:13:26: note: expected 'char *' but argument is of type 'int'
+   13 | int validarNumeros (char numeros[]);
+      |                     ~~~~~^~~~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:02:16 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:68:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   68 |     scanf("%s", unaVivienda.cantidadPersonas);
+      |            ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             |              |
+      |             char *         int
+..\src\censo.c:69:44: warning: passing argument 1 of 'validarNumeros' makes pointer from integer without a cast [-Wint-conversion]
+   69 |     validacion = validarNumeros(unaVivienda.cantidadPersonas);
+      |                                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            int
+In file included from ..\src\censo.c:11:
+..\src\input.h:13:26: note: expected 'char *' but argument is of type 'int'
+   13 | int validarNumeros (char numeros[]);
+      |                     ~~~~~^~~~~~~~~
+..\src\censo.c:76:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   76 |      scanf("%d", unaVivienda.cantidadPersonas);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |              |
+      |              int *          int
+..\src\censo.c:77:45: warning: passing argument 1 of 'validarNumeros' makes pointer from integer without a cast [-Wint-conversion]
+   77 |      validacion = validarNumeros(unaVivienda.cantidadPersonas);
+      |                                  ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             int
+In file included from ..\src\censo.c:11:
+..\src\input.h:13:26: note: expected 'char *' but argument is of type 'int'
+   13 | int validarNumeros (char numeros[]);
+      |                     ~~~~~^~~~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:02:24 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:68:13: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   68 |     scanf("%d", unaVivienda.cantidadPersonas);
+      |            ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             |              |
+      |             int *          int
+..\src\censo.c:69:44: warning: passing argument 1 of 'validarNumeros' makes pointer from integer without a cast [-Wint-conversion]
+   69 |     validacion = validarNumeros(unaVivienda.cantidadPersonas);
+      |                                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            int
+In file included from ..\src\censo.c:11:
+..\src\input.h:13:26: note: expected 'char *' but argument is of type 'int'
+   13 | int validarNumeros (char numeros[]);
+      |                     ~~~~~^~~~~~~~~
+..\src\censo.c:76:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   76 |      scanf("%d", unaVivienda.cantidadPersonas);
+      |             ~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              |              |
+      |              int *          int
+..\src\censo.c:77:45: warning: passing argument 1 of 'validarNumeros' makes pointer from integer without a cast [-Wint-conversion]
+   77 |      validacion = validarNumeros(unaVivienda.cantidadPersonas);
+      |                                  ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             int
+In file included from ..\src\censo.c:11:
+..\src\input.h:13:26: note: expected 'char *' but argument is of type 'int'
+   13 | int validarNumeros (char numeros[]);
+      |                     ~~~~~^~~~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:07:02 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:08:41 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:09:48 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:11:28 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:14:12 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:14:37 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:19:13 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:28:30 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'inicializarViviendas':
+..\src\censo.c:20:18: error: assignment to expression with array type
+   20 |   lista[i].calle = NULL;
+      |                  ^
+..\src\censo.c:21:33: warning: assignment to 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   21 |   lista[i].cantidadHabitaciones = NULL;
+      |                                 ^
+..\src\censo.c:22:29: warning: assignment to 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   22 |   lista[i].cantidadPersonas = NULL;
+      |                             ^
+..\src\censo.c:23:27: warning: assignment to 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   23 |   lista[i].legajoCensista = NULL;
+      |                           ^
+..\src\censo.c:24:25: warning: assignment to 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   24 |   lista[i].tipoVivienda = NULL;
+      |                         ^
+00:42:04 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:29:6: warning: unused variable 'bandera' [-Wunused-variable]
+   29 |  int bandera;
+      |      ^~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:50:46 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:121:74: error: expected ';' before '}' token
+  121 |      printf("|[> ERROR <] --| No se puede guardar (FALTAN DATOS) <|\n\n")
+      |                                                                          ^
+      |                                                                          ;
+  122 |     }
+      |     ~                                                                     
+..\src\censo.c:28:6: warning: variable 'validacionGuardar' set but not used [-Wunused-but-set-variable]
+   28 |  int validacionGuardar;
+      |      ^~~~~~~~~~~~~~~~~
+00:50:52 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:28:6: warning: variable 'validacionGuardar' set but not used [-Wunused-but-set-variable]
+   28 |  int validacionGuardar;
+      |      ^~~~~~~~~~~~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+00:51:14 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+01:01:25 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+01:04:37 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+01:17:10 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:23: error: incompatible type for argument 1 of 'inicializarViviendas'
+   27 |  inicializarViviendas(unaVivienda, 1);
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       sVivienda {aka struct <anonymous>}
+..\src\censo.c:13:38: note: expected 'sVivienda *' {aka 'struct <anonymous> *'} but argument is of type 'sVivienda' {aka 'struct <anonymous>'}
+   13 | void inicializarViviendas(sVivienda* lista, int longitud)
+      |                           ~~~~~~~~~~~^~~~~
+01:19:06 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:20: error: assignment to expression with array type
+   27 |  unaVivienda.calle = "0";
+      |                    ^
+..\src\censo.c:28:31: warning: assignment to 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   28 |  unaVivienda.cantidadPersonas = "0";
+      |                               ^
+..\src\censo.c:29:35: warning: assignment to 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   29 |  unaVivienda.cantidadHabitaciones = "0";
+      |                                   ^
+..\src\censo.c:30:27: warning: assignment to 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   30 |  unaVivienda.tipoVivienda = "0";
+      |                           ^
+..\src\censo.c:31:29: warning: assignment to 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   31 |  unaVivienda.legajoCensista = "0";
+      |                             ^
+01:19:29 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:20: error: assignment to expression with array type
+   27 |  unaVivienda.calle = '-';
+      |                    ^
+01:19:42 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:20: error: assignment to expression with array type
+   27 |  unaVivienda.calle = "---";
+      |                    ^
+01:20:19 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:20: error: assignment to expression with array type
+   27 |  unaVivienda.calle = "NADA";
+      |                    ^
+01:20:28 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:01:11 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:01:44 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:07:34 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:07:56 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:08:21 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:09:43 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:14:46 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+11:24:28 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+12:20:32 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+12:21:33 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+12:23:09 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:17:01 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:18:38 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:19:47 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:20:31 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:21:02 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:23:05 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:23:17 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'inicializarViviendas':
+..\src\censo.c:19:15: error: 'lista + (sizetype)((unsigned int)i * 48)' is a pointer; did you mean to use '->'?
+   19 |   *(lista + i).idVivienda = VACIO;
+      |               ^
+      |               ->
+21:23:26 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'inicializarViviendas':
+..\src\censo.c:19:3: error: invalid type argument of unary '*' (have 'int')
+   19 |   *(lista + i)->idVivienda = VACIO;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+21:23:36 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'inicializarViviendas':
+..\src\censo.c:19:17: error: invalid type argument of '->' (have 'sVivienda' {aka 'struct <anonymous>'})
+   19 |   (*(lista + i))->idVivienda = VACIO;
+      |                 ^~
+21:23:45 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:25:17 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+..\src\input.c: In function 'validarCaracteres':
+..\src\input.c:23:22: warning: passing argument 1 of 'isdigit' makes integer from pointer without a cast [-Wint-conversion]
+   23 |   if (isdigit(string + i))
+      |               ~~~~~~~^~~
+      |                      |
+      |                      char *
+In file included from ..\src\input.c:9:
+c:\mingw\include\ctype.h:73:46: note: expected 'int' but argument is of type 'char *'
+   73 | _CRTIMP __cdecl __MINGW_NOTHROW  int isdigit(int);
+      |                                              ^~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:25:41 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:25:49 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:36:26 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:48:5: error: too many arguments to function 'cargarVivienda'
+   48 |     cargarVivienda(listaViviendas, LEN, opcionesViviendas, 4);
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\PARCIAL_[0].c:13:
+..\src\censo.h:46:5: note: declared here
+   46 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~
+21:37:38 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'inicializarViviendas':
+..\src\censo.c:19:4: error: invalid type argument of unary '*' (have 'int')
+   19 |   (*(lista + i)->idVivienda) = VACIO;
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\censo.c: At top level:
+..\src\censo.c:23:11: error: conflicting types for 'ingresarVivienda'
+   23 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, int longitud);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'buscarEspacioVacio':
+..\src\censo.c:203:8: error: invalid type argument of unary '*' (have 'int')
+  203 |   if ((*(lista + i)->idVivienda) == VACIO)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'cargarVivienda':
+..\src\censo.c:220:25: error: too many arguments to function 'ingresarVivienda'
+  220 |   (*(lista + indice)) = ingresarVivienda(listaOpcionViviendas, longitud);
+      |                         ^~~~~~~~~~~~~~~~
+..\src\censo.c:23:11: note: declared here
+   23 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas)
+      |           ^~~~~~~~~~~~~~~~
+21:38:00 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'inicializarViviendas':
+..\src\censo.c:19:4: error: invalid type argument of unary '*' (have 'int')
+   19 |   (*(lista + i)->idVivienda) = VACIO;
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\censo.c: At top level:
+..\src\censo.c:23:11: error: conflicting types for 'ingresarVivienda'
+   23 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, int longitud);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'buscarEspacioVacio':
+..\src\censo.c:203:8: error: invalid type argument of unary '*' (have 'int')
+  203 |   if ((*(lista + i)->idVivienda) == VACIO)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+21:38:28 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:23:11: error: conflicting types for 'ingresarVivienda'
+   23 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, int longitud);
+      |           ^~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'buscarEspacioVacio':
+..\src\censo.c:203:8: error: invalid type argument of unary '*' (have 'int')
+  203 |   if ((*(lista + i)->idVivienda) == VACIO)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+21:38:50 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c:23:11: error: conflicting types for 'ingresarVivienda'
+   23 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas)
+      |           ^~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:42:11: note: previous declaration of 'ingresarVivienda' was here
+   42 | sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, int longitud);
+      |           ^~~~~~~~~~~~~~~~
+21:39:39 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+21:40:40 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:13: error: invalid type argument of '->' (have 'sVivienda' {aka 'struct <anonymous>'})
+   27 |  unaVivienda->calle = "-";
+      |             ^~
+21:40:49 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:20: error: assignment to expression with array type
+   27 |  unaVivienda.calle = "-";
+      |                    ^
+21:41:40 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:27:22: error: expected expression before '{' token
+   27 |  unaVivienda.calle = {{"-"}};
+      |                      ^
+21:41:57 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+21:43:05 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+Info: Nothing to build for PARCIAL_[0]
+21:43:21 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:43:32 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:43:42 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:46:17 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+21:47:16 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:00:54 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:48:56: error: incompatible type for argument 1 of 'indiceTipoVivienda'
+   48 |   indiceOpcionVivienda = indiceTipoVivienda(unaVivienda.tipoVivienda, listaOpcionViviendas, 4);
+      |                                             ~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        int
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:34: note: expected 'sVivienda' {aka 'struct <anonymous>'} but argument is of type 'int'
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |                        ~~~~~~~~~~^~~~~
+..\src\censo.c:48:26: error: too many arguments to function 'indiceTipoVivienda'
+   48 |   indiceOpcionVivienda = indiceTipoVivienda(unaVivienda.tipoVivienda, listaOpcionViviendas, 4);
+      |                          ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:5: note: declared here
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\censo.c:63:55: error: invalid type argument of '->' (have 'sTipoVivienda' {aka 'struct <anonymous>'})
+   63 |     , (*(listaOpcionViviendas + indiceOpcionVivienda))->descripcionVivienda
+      |                                                       ^~
+..\src\censo.c: At top level:
+..\src\censo.c:230:5: error: conflicting types for 'indiceTipoVivienda'
+  230 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas, int longitudOpciones)
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:5: note: previous declaration of 'indiceTipoVivienda' was here
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'indiceTipoVivienda':
+..\src\censo.c:237:58: error: invalid type argument of '->' (have 'sTipoVivienda' {aka 'struct <anonymous>'})
+  237 |   if (lista.tipoVivienda == (*(listaOpcionViviendas + i))->tipoVivienda)
+      |                                                          ^~
+22:01:08 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:48:56: error: incompatible type for argument 1 of 'indiceTipoVivienda'
+   48 |   indiceOpcionVivienda = indiceTipoVivienda(unaVivienda.tipoVivienda, listaOpcionViviendas, 4);
+      |                                             ~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        int
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:34: note: expected 'sVivienda' {aka 'struct <anonymous>'} but argument is of type 'int'
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |                        ~~~~~~~~~~^~~~~
+..\src\censo.c:48:26: error: too many arguments to function 'indiceTipoVivienda'
+   48 |   indiceOpcionVivienda = indiceTipoVivienda(unaVivienda.tipoVivienda, listaOpcionViviendas, 4);
+      |                          ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:5: note: declared here
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\censo.c: At top level:
+..\src\censo.c:230:5: error: conflicting types for 'indiceTipoVivienda'
+  230 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas, int longitudOpciones)
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:5: note: previous declaration of 'indiceTipoVivienda' was here
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\censo.c: In function 'indiceTipoVivienda':
+..\src\censo.c:237:58: error: invalid type argument of '->' (have 'sTipoVivienda' {aka 'struct <anonymous>'})
+  237 |   if (lista.tipoVivienda == (*(listaOpcionViviendas + i))->tipoVivienda)
+      |                                                          ^~
+22:01:37 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:48:56: error: incompatible type for argument 1 of 'indiceTipoVivienda'
+   48 |   indiceOpcionVivienda = indiceTipoVivienda(unaVivienda.tipoVivienda, listaOpcionViviendas, 4);
+      |                                             ~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        int
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:34: note: expected 'sVivienda' {aka 'struct <anonymous>'} but argument is of type 'int'
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |                        ~~~~~~~~~~^~~~~
+..\src\censo.c:48:26: error: too many arguments to function 'indiceTipoVivienda'
+   48 |   indiceOpcionVivienda = indiceTipoVivienda(unaVivienda.tipoVivienda, listaOpcionViviendas, 4);
+      |                          ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:5: note: declared here
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\censo.c: At top level:
+..\src\censo.c:230:5: error: conflicting types for 'indiceTipoVivienda'
+  230 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas, int longitudOpciones)
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:5: note: previous declaration of 'indiceTipoVivienda' was here
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~~~~~
+22:01:49 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'ingresarVivienda':
+..\src\censo.c:48:56: error: incompatible type for argument 1 of 'indiceTipoVivienda'
+   48 |   indiceOpcionVivienda = indiceTipoVivienda(unaVivienda.tipoVivienda, listaOpcionViviendas, 4);
+      |                                             ~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                                        |
+      |                                                        int
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\censo.c:9:
+..\src\censo.h:48:34: note: expected 'sVivienda' {aka 'struct <anonymous>'} but argument is of type 'int'
+   48 | int indiceTipoVivienda(sVivienda lista, sTipoVivienda* listaOpcionViviendas, int longitudOpciones);
+      |                        ~~~~~~~~~~^~~~~
+22:04:24 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+22:07:09 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:08:44 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:22:26 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:32:32 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:22:77: warning: overflow in conversion from 'int' to 'char' changes value from '-50377' to '55' [-Woverflow]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, 4301-54678}, {102, "Sol", 47, 5902-37487}};
+      |                                                                             ^~~~
+..\src\PARCIAL_[0].c:22:27: warning: missing braces around initializer [-Wmissing-braces]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, 4301-54678}, {102, "Sol", 47, 5902-37487}};
+      |                           ^
+      |                                                                             {         }
+..\src\PARCIAL_[0].c:22:107: warning: overflow in conversion from 'int' to 'char' changes value from '-31585' to '-97' [-Woverflow]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, 4301-54678}, {102, "Sol", 47, 5902-37487}};
+      |                                                                                                           ^~~~
+..\src\PARCIAL_[0].c:22:27: warning: missing braces around initializer [-Wmissing-braces]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, 4301-54678}, {102, "Sol", 47, 5902-37487}};
+      |                           ^
+      |                                                                             {         }                   {         }
+..\src\PARCIAL_[0].c:22:27: warning: missing braces around initializer [-Wmissing-braces]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, 4301-54678}, {102, "Sol", 47, 5902-37487}};
+      |                           ^
+      |                                                                             {         }                   {         }
+..\src\PARCIAL_[0].c:22:12: warning: unused variable 'censistas' [-Wunused-variable]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, 4301-54678}, {102, "Sol", 47, 5902-37487}};
+      |            ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:33:02 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:22:12: warning: unused variable 'censistas' [-Wunused-variable]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, "4301-54678"}, {102, "Sol", 47, "5902-37487"}};
+      |            ^~~~~~~~~
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:42:55 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:22:12: warning: unused variable 'censistas' [-Wunused-variable]
+   22 |  sCensista censistas[3] = {{100, "Ana", 34, "1203-2345"}, {101, "Juan", 24, "4301-54678"}, {102, "Sol", 47, "5902-37487"}};
+      |            ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+22:50:31 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+..\src\PARCIAL_[0].c: In function 'main':
+..\src\PARCIAL_[0].c:51:14: error: too many arguments to function 'cargarVivienda'
+   51 |     indice = cargarVivienda(listaViviendas, LEN, opcionesViviendas, censistas);
+      |              ^~~~~~~~~~~~~~
+In file included from ..\src\desarrollo.h:13,
+                 from ..\src\PARCIAL_[0].c:13:
+..\src\censo.h:46:5: note: declared here
+   46 | int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas);
+      |     ^~~~~~~~~~~~~~
+22:51:37 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:52:24 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:52:58 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:54:32 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:55:48 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:56:42 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+22:59:56 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 

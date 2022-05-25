@@ -1,0 +1,55 @@
+/*
+ ============================================================================
+ Name        : PARCIAL_[0].c
+ Author      : P4TTT0
+ Version     :
+ Copyright   : TTT
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "desarrollo.h"
+#include "censo.h"
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	sVivienda listaViviendas[LEN];
+	sTipoVivienda opcionesViviendas[4] = {{1, "CASA"}, {2, "DEPARTAMENTO"}, {3, "CASILLA"}, {4, "RANCHO"}};
+
+	int opcion;
+
+	opcion = 0;
+
+	inicializarViviendas(listaViviendas, LEN);
+
+	do
+	{
+		clear();
+		printf("|<------   | - MENU - |   ------>|\n\n"
+				"|[1] >- | INGRESAR VIVIENDA |\n"
+				"|[2] >- | MODIFICAR VIVIENDA |\n"
+				"|[3] >- | ELIMINAR VIVIENDA |\n"
+				"|[4] >- | LISTAR VIVIENDAS |\n"
+				"|[5] >- | LISTAR CENCISTAS |\n"
+				"|[6] >- | SALIR <|\n\n"
+				"|[INGRESE LA OPCION]<|: ");
+
+
+		fflush(stdin);
+		scanf("%d", &opcion);
+
+		switch (opcion)
+		{
+			case 1:
+				ingresarVivienda(opcionesViviendas, LEN);
+			break;
+		}
+
+	}while(opcion != 6);
+
+	return EXIT_SUCCESS;
+}

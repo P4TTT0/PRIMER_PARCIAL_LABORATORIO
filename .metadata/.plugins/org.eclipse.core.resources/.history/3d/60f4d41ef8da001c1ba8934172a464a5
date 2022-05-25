@@ -1,0 +1,17 @@
+/*
+ * desarrollo.c
+ *
+ *  Created on: 23 may. 2022
+ *      Author: PEREZ CARDENAL PATRICIO
+ */
+#include "censo.h"
+
+int id = 2000;
+
+int generarId()
+{
+	id++;
+
+	return id;
+}
+

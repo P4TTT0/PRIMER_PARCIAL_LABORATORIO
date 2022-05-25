@@ -1,0 +1,9 @@
+/*
+ * desarrollo.c
+ *
+ *  Created on: 23 may. 2022
+ *      Author: PEREZ CARDENAL PATRICIO
+ */
+
+int generarId();
+
