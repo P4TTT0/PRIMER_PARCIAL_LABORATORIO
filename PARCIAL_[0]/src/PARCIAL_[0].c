@@ -23,9 +23,11 @@ int main(void) {
 
 	int opcion;
 	int indice;
+	int indiceEspacioLleno;
 
 	opcion = 0;
 	indice = 0;
+	indiceEspacioLleno = 0;
 
 	inicializarViviendas(listaViviendas, LEN);
 
@@ -55,6 +57,22 @@ int main(void) {
 					clear();
 					printf("|<------   | - LISTA LLENA - |   ------>|\n\n");
 					printf("|<(No quedan espacios disponibles)>|\n");
+					system("pause");
+				}
+			break;
+
+			case 2:
+				indiceEspacioLleno = buscarEspacioLleno(listaViviendas, LEN);
+
+				if (indiceEspacioLleno != VACIO)
+				{
+					modificarVivienda(listaViviendas, LEN, opcionesViviendas, censistas);
+				}
+				else
+				{
+					clear();
+					printf("|<------   | - NO HAY VIVIENDAS EN LISTA - |   ------>|\n\n");
+					printf("|<(Imposible modificar)>|\n");
 					system("pause");
 				}
 			break;

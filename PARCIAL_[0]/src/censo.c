@@ -190,6 +190,7 @@ sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legaj
 					system("pause");
 				}
 			break;
+
 			default:
 				clear();
 				printf("|<------   | - OPCION INVALIDA - |   ------>|\n\n");
@@ -217,6 +218,24 @@ int buscarEspacioVacio(sVivienda* lista, int longitud)
 		}
 	}
 	return indice;
+}
+
+int buscarEspacioLleno(sVivienda* lista, int longitud)
+{
+	int indice;
+		int i;
+
+		indice = VACIO;
+
+		for (i = 0; i < longitud; i++)
+		{
+			if ((*(lista + i)).idVivienda != VACIO)
+			{
+				indice = i;
+				break;
+			}
+		}
+		return indice;
 }
 
 int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
@@ -265,4 +284,253 @@ int indiceCensista(int indiceLegajoCensista, sCensista* legajosCensista, int lon
 		}
 
 		return indice;
+}
+
+int buscarPasajeroPorId(sVivienda* lista, int longitud, int id)
+{
+	int indice;
+	int i;
+
+	indice = -1;
+
+	for (i = 0; i < longitud; i++)
+	{
+		if ((*(lista + i)).idVivienda == id && (*(lista + i)).idVivienda != VACIO)
+		{
+			indice = i;
+			break;
+		}
+	}
+
+	return indice;
+}
+
+int modificarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+{
+	int id;
+	int indiceVivienda;
+	int indiceOpcionVivienda;
+	int indiceNombreCensista;
+	int opcion;
+	int validacion;
+	int bandera;
+
+	id = 0;
+	indiceVivienda = 0;
+	indiceOpcionVivienda = 0;
+	indiceNombreCensista = 0;
+	opcion = 0;
+	validacion = 0;
+	bandera = 0;
+
+	clear();
+	printf("|[> 2 <] --| MODIFICAR VIVIENDA <|\n\n");
+	listarViviendas(lista, longitud, listaOpcionViviendas, legajosCensista);
+	printf("|[INGRESE EL [ID] DE LA VIVIENDA A MODIFICAR]<|:");
+
+	fflush(stdin);
+	scanf("%d", &id);
+
+	indiceVivienda = buscarPasajeroPorId(lista, longitud, id);
+
+	while (indiceVivienda == -1)
+	{
+		printf("|[> 2 <] --| MODIFICAR VIVIENDA <|\n\n"
+			   "|<ERROR>| (Vivienda no encontrada)"
+			   "|[INGRESE EL [ID] DE LA VIVIENDA A MODIFICAR]<|:");
+
+		fflush(stdin);
+		scanf("%d", &id);
+
+		indiceVivienda = buscarPasajeroPorId(lista, longitud, id);
+	}
+
+	do
+	{
+		indiceOpcionVivienda = indiceTipoVivienda((*(lista + indiceVivienda)).tipoVivienda, listaOpcionViviendas, 4);
+		indiceNombreCensista = indiceCensista((*(lista + indiceVivienda)).legajoCensista, legajosCensista, 3);
+		clear();
+		printf("|[> 2 <] --| MODIFICAR VIVIENDA <|\n\n"
+				"|[1] >- | MODIFICAR CALLE <[%s]|\n"
+				"|[2] >- | MODIFICAR CANTIDAD DE PERSONAS <[%d]|\n"
+				"|[3] >- | MODIFICAR CANTIDAD DE HABITACIONES <[%d]|\n"
+				"|[4] >- | MODIFICAR TIPO DE VIVIENDA <[[%d] - [%s]]|\n"
+				"|[5] >- | MODIFICAR LEGAJO DE CENSISTA <[[%d] - [%s]]|\n"
+				"|[6] >- | SALIR Y GUARDAR <|\n\n"
+				"|[INGRESE LA OPCION]<|:"
+				, (*(lista + indiceVivienda)).calle
+				, (*(lista + indiceVivienda)).cantidadPersonas
+				, (*(lista + indiceVivienda)).cantidadHabitaciones
+				, (*(lista + indiceVivienda)).tipoVivienda
+				, (*(listaOpcionViviendas + indiceOpcionVivienda)).descripcionVivienda
+				, (*(lista + indiceVivienda)).legajoCensista
+				, (*(legajosCensista + indiceNombreCensista)).nombre);
+
+		fflush(stdin);
+		scanf("%d", &opcion);
+
+		switch (opcion)
+		{
+			case 1:
+				clear();
+				printf("|[> 1 <] --| MODIFICAR CALLE <|\n\n"
+					   "|[INGRESE LA CALLE]<|:\n");
+				fflush(stdin);
+				gets((*(lista + indiceVivienda)).calle);
+				validacion = validarCaracteres((*(lista + indiceVivienda)).calle);
+
+				while (validacion == 0)
+				{
+					clear();
+					printf("|[> 1 <] --| MODIFICAR CALLE <|\n\n"
+						   "|<ERROR>| (Escriba unicamente caracteres)\n"
+						   "|[INGRESE LA CALLE]<|:\n");
+					fflush(stdin);
+					gets((*(lista + indiceVivienda)).calle);
+					validacion = validarCaracteres((*(lista + indiceVivienda)).calle);
+				}
+				bandera = 1;
+			break;
+
+			case 2:
+				clear();
+				(*(lista + indiceVivienda)).cantidadPersonas = pedirEntero("|[> 2 <] --| MODIFICAR CANTIDAD DE PERSONAS <|\n\n"
+																		   "|[INGRESE LA CANTIDAD DE PERSONAS] (1 - 30) <|:\n");
+				while ((*(lista + indiceVivienda)).cantidadPersonas < 1 || (*(lista + indiceVivienda)).cantidadPersonas > 30)
+				{
+					clear();
+					(*(lista + indiceVivienda)).cantidadPersonas = pedirEntero("|[> 2 <] --| MODIFICAR CANTIDAD DE PERSONAS <|\n\n"
+																			   "|<ERROR>| (Ingrese una cantidad valida)\n"
+																			   "|[INGRESE LA CANTIDAD DE PERSONAS] (1 - 30) <|:\n");
+
+				}
+				bandera = 1;
+			break;
+
+			case 3:
+				clear();
+				(*(lista + indiceVivienda)).cantidadHabitaciones = pedirEntero("|[> 3 <] --| MODIFICAR CANTIDAD DE HABITACIONES <|\n\n"
+															   	   	   	   	   "|[INGRESE LA CANTIDAD DE HABITACIONES] (1 - 25) <|:\n");
+				while ((*(lista + indiceVivienda)).cantidadHabitaciones < 1 || (*(lista + indiceVivienda)).cantidadHabitaciones > 25)
+				{
+					clear();
+					(*(lista + indiceVivienda)).cantidadHabitaciones = pedirEntero("|[> 3 <] --| MODIFICAR CANTIDAD DE HABITACIONES <|\n\n"
+																   	   	   	   	   "|<ERROR>| (Ingrese una cantidad valida)\n"
+																				   "|[INGRESE LA CANTIDAD DE HABITACIONES] (1 - 25) <|:\n");
+				}
+				bandera = 1;
+			break;
+
+			case 4:
+				clear();
+				(*(lista + indiceVivienda)).tipoVivienda = pedirEntero("|[> 4 <] --| MODIFICAR TIPO DE VIVIENDA <|\n\n"
+																	   "|[1] | Casa |\n"
+																	   "|[2] | Departamento |\n"
+																	   "|[3] | Casilla |\n"
+																	   "|[4] | Rancho |\n\n"
+																	   "|[INGRESE EL TIPO DE VIVIENDA]<|:\n");
+				while ((*(lista + indiceVivienda)).tipoVivienda < 1 || (*(lista + indiceVivienda)).tipoVivienda > 4)
+				{
+					clear();
+					(*(lista + indiceVivienda)).tipoVivienda = pedirEntero("|[> 4 <] --| MODIFICAR TIPO DE VIVIENDA <|\n\n"
+																		   "|<ERROR>| (Elija un tipo de vivienda existente)\n"
+																		   "|[1] | Casa |\n"
+																		   "|[2] | Departamento |\n"
+																		   "|[3] | Casilla |\n"
+																		   "|[4] | Rancho |\n\n"
+																		   "|[INGRESE EL TIPO DE VIVIENDA]<|:\n");
+
+				}
+				bandera = 1;
+			break;
+
+			case 5:
+				clear();
+				(*(lista + indiceVivienda)).legajoCensista = pedirEntero("|[> 5 <] --| MODIFICAR LEGAJO CENSISTA <|\n\n"
+													   	   	   	   	   	 "|[100] | Ana |\n"
+																		 "|[101] | Juan |\n"
+																		 "|[102] | Sol |\n\n"
+																		 "|[INGRESE EL LEGAJO DEL CENSISTA]<|:\n");
+				while ((*(lista + indiceVivienda)).legajoCensista < 100 || (*(lista + indiceVivienda)).legajoCensista > 102)
+				{
+					clear();
+					(*(lista + indiceVivienda)).legajoCensista = pedirEntero("|[> 5 <] --| MODIFICAR LEGAJO CENSISTA <|\n\n"
+																			 "|<ERROR>| (Elija un censista existente)\n"
+																			 "|[1] | [100] - Ana |\n"
+																			 "|[2] | [101] - Juan |\n"
+																			 "|[3] | [102] - Sol |\n\n"
+																			 "|[INGRESE EL LEGAJO DEL CENSISTA]<|:\n");
+				}
+				bandera = 1;
+			break;
+
+			case 6:
+				if (bandera == 1)
+				{
+					clear();
+					printf("|<------   | - GUARDADO CON EXITO - |   ------>|\n\n");
+					printf("=====================================================================================================\n"
+							"||ID     ||CALLE              ||PERSONAS  ||HABITACIONES  ||TIPO DE VIVIENDA    ||LEGAJO CENSISTA  ||\n"
+							"=====================================================================================================\n"
+							"||%-7d||%-19s||%-10d||%-14d||%-20s||%d | %-11s||\n"
+							, (*(lista + indiceVivienda)).idVivienda
+							, (*(lista + indiceVivienda)).calle
+							, (*(lista + indiceVivienda)).cantidadPersonas
+							, (*(lista + indiceVivienda)).cantidadHabitaciones
+							, (*(listaOpcionViviendas + indiceOpcionVivienda)).descripcionVivienda
+							, (*(lista + indiceVivienda)).legajoCensista
+							, (*(legajosCensista + indiceNombreCensista)).nombre);
+					printf("=====================================================================================================\n");
+					system("pause");
+				}
+				else
+				{
+					clear();
+					printf("|[> NO SE HAN REALIZADO CAMBIOS <]|\n\n");
+					system("pause");
+				}
+			break;
+
+			default:
+				clear();
+				printf("|<------   | - OPCION INVALIDA - |   ------>|\n\n");
+				system("pause");
+			break;
+		}
+	}while (opcion != 6);
+
+	return 0;
+}
+
+int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista)
+{
+	int i;
+	int indiceOpcionVivienda;
+	int indiceNombreCensista;
+
+	printf("=====================================================================================================\n"
+		   "||ID     ||CALLE              ||PERSONAS  ||HABITACIONES  ||TIPO DE VIVIENDA    ||LEGAJO CENSISTA  ||\n"
+		   "=====================================================================================================\n");
+
+	for (i = 0; i < longitud; i++)
+	{
+		indiceOpcionVivienda = indiceTipoVivienda((*(lista + i)).tipoVivienda, listaOpcionViviendas, 4);
+		indiceNombreCensista = indiceCensista((*(lista + i)).legajoCensista, legajosCensista, 3);
+
+		if ((*(lista + i)).idVivienda != VACIO)
+		{
+				printf("||%-7d||%-19s||%-10d||%-14d||%-20s||%d | %-11s||\n"
+				, (*(lista + i)).idVivienda
+				, (*(lista + i)).calle
+				, (*(lista + i)).cantidadPersonas
+				, (*(lista + i)).cantidadHabitaciones
+				, (*(listaOpcionViviendas + indiceOpcionVivienda)).descripcionVivienda
+				, (*(lista + i)).legajoCensista
+				, (*(legajosCensista + indiceNombreCensista)).nombre);
+		}
+	}
+
+	printf("=====================================================================================================\n");
+
+	return 0;
 }

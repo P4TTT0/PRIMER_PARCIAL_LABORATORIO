@@ -9,7 +9,7 @@
 #define CENSO_H_
 
 #define TAM 30
-#define LEN 1
+#define LEN 2000
 #define VACIO 1
 #define OCUPADO -1
 
@@ -43,10 +43,18 @@ sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legaj
 
 int buscarEspacioVacio(sVivienda* lista, int longitud);
 
+int buscarEspacioLleno(sVivienda* lista, int longitud);
+
 int cargarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
 
 int indiceTipoVivienda(int indiceTipoVivienda, sTipoVivienda* listaOpcionViviendas, int longitudOpciones);
 
 int indiceCensista(int indiceLegajoCensista, sCensista* legajosCensista, int longitudCensita);
+
+int buscarPasajeroPorId(sVivienda* lista, int longitud, int id);
+
+int modificarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
+
+int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listOpcionViviendas, sCensista* legajosCensista);
 
 #endif /* CENSO_H_ */
