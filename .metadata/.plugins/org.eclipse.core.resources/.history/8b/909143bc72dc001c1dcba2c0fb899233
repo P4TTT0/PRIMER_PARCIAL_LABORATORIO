@@ -73,7 +73,7 @@ void animacionCargando()
 	int frames;
 	int tiempo;
 
-	frames = 9;
+	frames = 6;
 	tiempo = 100;
 
 	for(i = 0 + 1; i < frames; i++)
@@ -87,32 +87,33 @@ void animacionCargando()
 		break;
 		case 2:
 			clear();
-			printf("|<[CARGANDO]>|: |>-----              <|");
+			printf("|<[CARGANDO]>|: |>-------            <|");
 			Sleep(tiempo);
 		break;
 		case 3:
 			clear();
-			printf("|<[CARGANDO]>|: |>--------           <|");
+			printf("|<[CARGANDO]>|: |>-----------        <|");
 			Sleep(tiempo);
 		break;
 		case 4:
 			clear();
-			printf("|<[CARGANDO]>|: |>-----------        <|");
+			printf("|<[CARGANDO]>|: |>----------------   <|");
 			Sleep(tiempo);
 		break;
 		case 5:
 			clear();
-			printf("|<[CARGANDO]>|: |>-------------      <|");
+			printf("|<[CARGANDO]>|: |>-------------------<|");
 			Sleep(tiempo);
 		break;
 		case 6:
 			clear();
-			printf("|<[CARGANDO]>|: |>---------------    <|");
+			printf("|<[CARGANDO]>|: |>-------------------<|");
 			Sleep(tiempo);
 		break;
+
 		case 7:
 			clear();
-			printf("|<[CARGANDO]>|: |>-----------------  <|");
+			printf("|<[CARGANDO]>|: |>-------------------<|");
 			Sleep(tiempo);
 		break;
 		case 8:

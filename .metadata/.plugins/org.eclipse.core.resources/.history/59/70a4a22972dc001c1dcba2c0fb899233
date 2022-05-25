@@ -29,10 +29,8 @@ void animacionApagado()
 {
 	int i;
 	int frames;
-	int tiempo;
 
 	frames = 6;
-	tiempo = 250;
 
 	for(i = 0 + 1; i < frames; i++)
 	{
@@ -41,27 +39,27 @@ void animacionApagado()
 		case 1:
 			clear();
 			printf("|>--       5          <|");
-			Sleep(tiempo);
+			Sleep(500);
 		break;
 		case 2:
 			clear();
 			printf("|>-----   35          <|");
-			Sleep(tiempo);
+			Sleep(500);
 		break;
 		case 3:
 			clear();
 			printf("|>--------65--        <|");
-			Sleep(tiempo);
+			Sleep(500);
 		break;
 		case 4:
 			clear();
 			printf("|>--------95-------   <|");
-			Sleep(tiempo);
+			Sleep(500);
 		break;
 		case 5:
 			clear();
 			printf("|>--------100---------<|");
-			Sleep(tiempo);
+			Sleep(500);
 		break;
 		}
 	}
@@ -71,10 +69,8 @@ void animacionCargando()
 {
 	int i;
 	int frames;
-	int tiempo;
 
-	frames = 9;
-	tiempo = 100;
+	frames = 6;
 
 	for(i = 0 + 1; i < frames; i++)
 	{
@@ -83,42 +79,27 @@ void animacionCargando()
 		case 1:
 			clear();
 			printf("|<[CARGANDO]>|: |>--                 <|");
-			Sleep(tiempo);
+			Sleep(500);
 		break;
 		case 2:
 			clear();
-			printf("|<[CARGANDO]>|: |>-----              <|");
-			Sleep(tiempo);
+			printf("|<[CARGANDO]>|: |>-------            <|");
+			Sleep(500);
 		break;
 		case 3:
 			clear();
-			printf("|<[CARGANDO]>|: |>--------           <|");
-			Sleep(tiempo);
+			printf("|<[CARGANDO]>|: |>-----------        <|");
+			Sleep(500);
 		break;
 		case 4:
 			clear();
-			printf("|<[CARGANDO]>|: |>-----------        <|");
-			Sleep(tiempo);
+			printf("|<[CARGANDO]>|: |>----------------   <|");
+			Sleep(500);
 		break;
 		case 5:
 			clear();
-			printf("|<[CARGANDO]>|: |>-------------      <|");
-			Sleep(tiempo);
-		break;
-		case 6:
-			clear();
-			printf("|<[CARGANDO]>|: |>---------------    <|");
-			Sleep(tiempo);
-		break;
-		case 7:
-			clear();
-			printf("|<[CARGANDO]>|: |>-----------------  <|");
-			Sleep(tiempo);
-		break;
-		case 8:
-			clear();
-			printf("|<[CARGANDO]>|: |>-------------------<|");
-			Sleep(tiempo);
+			printf("|>--------100---------<|");
+			Sleep(500);
 		break;
 		}
 	}

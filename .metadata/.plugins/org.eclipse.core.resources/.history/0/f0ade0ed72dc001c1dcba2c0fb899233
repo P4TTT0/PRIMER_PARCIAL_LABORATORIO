@@ -490,8 +490,6 @@ int modificarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcion
 				if (bandera == 1)
 				{
 					clear();
-					animacionCargando();
-					clear();
 					printf("|<------   | - GUARDADO CON EXITO - |   ------>|\n\n");
 					printf("=====================================================================================================\n"
 							"||ID     ||CALLE              ||PERSONAS  ||HABITACIONES  ||TIPO DE VIVIENDA    ||LEGAJO CENSISTA  ||\n"

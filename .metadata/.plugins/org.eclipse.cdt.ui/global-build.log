@@ -1451,3 +1451,104 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
 gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
 Info: Nothing to build for PARCIAL_[0]
+Info: Nothing to build for PARCIAL_[0]
+18:20:57 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:25:48 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+..\src\desarrollo.c: In function 'AnimacionApagado':
+..\src\desarrollo.c:40:4: warning: implicit declaration of function 'Clear'; did you mean 'clear'? [-Wimplicit-function-declaration]
+   40 |    Clear();
+      |    ^~~~~
+      |    clear
+..\src\desarrollo.c:41:25: warning: unknown conversion type character ' ' in format [-Wformat=]
+   41 |    printf("|>--       %5         <|");
+      |                         ^
+..\src\desarrollo.c:46:25: warning: unknown conversion type character ' ' in format [-Wformat=]
+   46 |    printf("|>-----   %35         <|");
+      |                         ^
+..\src\desarrollo.c:51:25: warning: unknown conversion type character '-' in format [-Wformat=]
+   51 |    printf("|>--------%65--       <|");
+      |                         ^
+..\src\desarrollo.c:56:25: warning: unknown conversion type character '-' in format [-Wformat=]
+   56 |    printf("|>--------%95-------  <|");
+      |                         ^
+..\src\desarrollo.c:61:26: warning: unknown conversion type character '-' in format [-Wformat=]
+   61 |    printf("|>--------%100---------<|");
+      |                          ^
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\PARCIAL_[0].o: in function `main':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/PARCIAL_[0].c:138: undefined reference to `animacionApagado'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\desarrollo.o: in function `AnimacionApagado':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/desarrollo.c:40: undefined reference to `Clear'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/desarrollo.c:45: undefined reference to `Clear'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/desarrollo.c:50: undefined reference to `Clear'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/desarrollo.c:55: undefined reference to `Clear'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/desarrollo.c:60: undefined reference to `Clear'
+collect2.exe: error: ld returned 1 exit status
+18:27:17 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\PARCIAL_[0].o: in function `main':
+D:\OneDrive\Escritorio\PARCIAL_LABO[1]\PARCIAL_[0]\Debug/../src/PARCIAL_[0].c:138: undefined reference to `animacionApagado'
+collect2.exe: error: ld returned 1 exit status
+18:27:31 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:27:58 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+18:28:27 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:28:58 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:29:14 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:29:33 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:33:04 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+Info: Nothing to build for PARCIAL_[0]
+Info: Nothing to build for PARCIAL_[0]
+18:34:38 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:36:32 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:36:39 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+18:38:21 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 

@@ -94,8 +94,6 @@ int main(void) {
 					if (indiceViviendaEliminada != -1)
 					{
 						clear();
-						animacionCargando();
-						clear();
 						printf("|<------   | - PASAJERO ELIMINADO - |   ------>|\n\n"
 								"|<POSICION DEL PASAJERO>|: [%d]\n"
 								, indiceViviendaEliminada);
@@ -138,7 +136,6 @@ int main(void) {
 
 			case 6:
 				animacionApagado();
-				clear();
 				printf("|<------   | - SISTEMA APAGADO - |   ------>|");
 			break;
 

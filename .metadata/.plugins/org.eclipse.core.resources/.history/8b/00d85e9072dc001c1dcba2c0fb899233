@@ -186,7 +186,6 @@ sVivienda ingresarVivienda(sTipoVivienda* listaOpcionViviendas, sCensista* legaj
 					clear();
 					unaVivienda.idVivienda = generarId();
 					animacionCargando();
-					clear();
 					printf("|<------   | - GUARDADO CON EXITO - |   ------>|\n\n");
 					printf("=====================================================================================================\n"
 							"||ID     ||CALLE              ||PERSONAS  ||HABITACIONES  ||TIPO DE VIVIENDA    ||LEGAJO CENSISTA  ||\n"
@@ -489,8 +488,6 @@ int modificarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcion
 			case 6:
 				if (bandera == 1)
 				{
-					clear();
-					animacionCargando();
 					clear();
 					printf("|<------   | - GUARDADO CON EXITO - |   ------>|\n\n");
 					printf("=====================================================================================================\n"

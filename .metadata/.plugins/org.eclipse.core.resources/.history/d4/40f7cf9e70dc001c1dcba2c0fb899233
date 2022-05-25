@@ -94,8 +94,6 @@ int main(void) {
 					if (indiceViviendaEliminada != -1)
 					{
 						clear();
-						animacionCargando();
-						clear();
 						printf("|<------   | - PASAJERO ELIMINADO - |   ------>|\n\n"
 								"|<POSICION DEL PASAJERO>|: [%d]\n"
 								, indiceViviendaEliminada);
@@ -134,12 +132,6 @@ int main(void) {
 				clear();
 				listarCensistas(censistas, 3);
 				system("pause");
-			break;
-
-			case 6:
-				animacionApagado();
-				clear();
-				printf("|<------   | - SISTEMA APAGADO - |   ------>|");
 			break;
 
 			default:

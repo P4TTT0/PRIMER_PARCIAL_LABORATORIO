@@ -73,7 +73,7 @@ void animacionCargando()
 	int frames;
 	int tiempo;
 
-	frames = 9;
+	frames = 6;
 	tiempo = 100;
 
 	for(i = 0 + 1; i < frames; i++)

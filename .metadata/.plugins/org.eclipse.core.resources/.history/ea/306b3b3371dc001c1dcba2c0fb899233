@@ -12,8 +12,6 @@ int generarId();
 
 void clear();
 
-void animacionApagado();
 
-void animacionCargando();
 
 #endif /* DESARROLLO_H_ */
