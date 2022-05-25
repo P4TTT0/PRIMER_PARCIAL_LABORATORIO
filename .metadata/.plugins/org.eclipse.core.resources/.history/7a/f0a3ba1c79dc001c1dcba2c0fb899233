@@ -17,12 +17,8 @@ int generarId();
 ///
 void clear();
 
-/// @brief Funcion para simular una barra de carga con un porcentaje en el medio de la misma.
-///
 void animacionApagado();
 
-/// @brief Funcion para simular una barra de carga.
-///
 void animacionCargando();
 
 #endif /* DESARROLLO_H_ */

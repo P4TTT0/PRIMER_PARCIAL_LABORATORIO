@@ -96,7 +96,7 @@ int indiceCensista(int indiceLegajoCensista, sCensista* legajosCensista, int lon
 /// @param lista Puntero a estructura de array de la lista de viviendas.
 /// @param longitud Tamaño del array de la lista de viviendas.
 /// @param id ID de la vivienda a buscar.
-/// @return Retorna el indice en el que se encuentra la vivienda dentro de la lista de viviendas. | | Retorna -1 si no se haya la vivienda.
+/// @return Retorna el indice en el que se encuentra la vivienda dentro de la lista de viviendas.
 int buscarPasajeroPorId(sVivienda* lista, int longitud, int id);
 
 /// @brief Funcion para modificar los diferentes campos de una vivienda.
@@ -105,39 +105,15 @@ int buscarPasajeroPorId(sVivienda* lista, int longitud, int id);
 /// @param longitud Tamaño del array de la lista de viviendas.
 /// @param listaOpcionViviendas Puntero a estructura de array de los tipos de viviendas.
 /// @param legajosCensista Puntero a estructura de array de los diferentes censistas.
-/// @return 0
+/// @return
 int modificarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
 
-/// @brief Funcion para recorrer el array de la lista de viviendas y PRINTEAR en forma de cuadro las viviendas que esten cargadas.
-///
-/// @param lista Puntero a estructura de array de la lista de viviendas.
-/// @param longitud Tamaño del array de la lista de viviendas.
-/// @param listaOpcionViviendas Puntero a estructura de array de los tipos de viviendas.
-/// @param legajosCensista Puntero a estructura de array de los diferentes censistas.
-/// @return 0
 int listarViviendas(sVivienda* lista, int longitud, sTipoVivienda* listOpcionViviendas, sCensista* legajosCensista);
 
-/// @brief Funcion para eliminar una vivienda dentro del array de viviendas por el [ID] del mismo.
-///
-/// @param lista Puntero a estructura de array de la lista de viviendas.
-/// @param longitud Tamaño del array de la lista de viviendas.
-/// @param listaOpcionViviendas Puntero a estructura de array de los tipos de viviendas.
-/// @param legajosCensista Puntero a estructura de array de los diferentes censistas.
-/// @return Retorna el indice en el que se encontraba la vivienda. | Retorna -1 si no se encuentra la vivienda.
 int eliminarVivienda(sVivienda* lista, int longitud, sTipoVivienda* listaOpcionViviendas, sCensista* legajosCensista);
 
-/// @brief Funcion para ordenar todas las viviendas de manor a mayor en relacion a sus calles y ante igualdad de calles en relacion de la cantidad de persoans.
-///
-/// @param lista Puntero a estructura de array de la lista de viviendas.
-/// @param longitud Tamaño del array de la lista de viviendas.
-/// @return 0
 int ordenarViviendas(sVivienda* lista, int longitud);
 
-/// @brief Funcion para recorrer el array de los diferentes censistas y PRINTEARLOS junto con sus datos en forma de cuadro.
-///
-/// @param legajosCensista Puntero a estructura de array de los diferentes censistas.
-/// @param longitud Tamaño del array de los diferentes censistas
-/// @return 0
 int listarCensistas(sCensista* legajosCensista, int longitud);
 
 #endif /* CENSO_H_ */
