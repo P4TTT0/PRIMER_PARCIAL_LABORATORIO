@@ -720,6 +720,10 @@ int contarCensosRealizados (sVivienda* lista, int longitud, int* censosRealizado
 
 	for (i = 0; i < longitud; i++)
 	{
+		if ((*(lista + i)).idVivienda != VACIO)
+		{
+			*censosRealizadosAna = *censosRealizadosAna + 1;
+		}
 
 		switch((*(lista + i)).legajoCensista)
 		{

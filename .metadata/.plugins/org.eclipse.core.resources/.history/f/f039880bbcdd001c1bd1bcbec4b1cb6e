@@ -721,7 +721,7 @@ int contarCensosRealizados (sVivienda* lista, int longitud, int* censosRealizado
 	for (i = 0; i < longitud; i++)
 	{
 
-		switch((*(lista + i)).legajoCensista)
+	switch((*(lista + i)).legajoCensista)
 		{
 			case 100:
 				if ((*(lista + i)).idVivienda != VACIO)
