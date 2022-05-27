@@ -140,4 +140,6 @@ int ordenarViviendas(sVivienda* lista, int longitud);
 /// @return 0
 int listarCensistas(sCensista* legajosCensista, int longitud);
 
+int listarCensistasViviendas(sCensista* legajosCensista, int longitud, sVivienda* listaViviendas, int longitudViviendas, sTipoVivienda* listaOpcionViviendas);
+
 #endif /* CENSO_H_ */

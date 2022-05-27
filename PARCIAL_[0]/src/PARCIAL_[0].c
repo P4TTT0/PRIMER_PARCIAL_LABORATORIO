@@ -132,7 +132,7 @@ int main(void) {
 
 			case 5:
 				clear();
-				listarCensistas(censistas, 3);
+				listarCensistasViviendas(censistas, 3, listaViviendas, LEN, opcionesViviendas);
 				system("pause");
 			break;
 
