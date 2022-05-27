@@ -27,12 +27,18 @@ int main(void) {
 	int indiceEspacioLleno;
 	int indiceViviendaEliminada;
 	int error;
+	int censosRealizadosAna;
+	int censosRealizadosJuan;
+	int censosRealizadosSol;
 
 	opcion = 0;
 	indice = 0;
 	indiceEspacioLleno = 0;
 	indiceViviendaEliminada = 0;
 	error = 0;
+	censosRealizadosAna = 0;
+	censosRealizadosJuan = 0;
+	censosRealizadosSol = 0;
 
 	inicializarViviendas(listaViviendas, LEN);
 
@@ -132,8 +138,66 @@ int main(void) {
 
 			case 5:
 				clear();
-				listarCensistasViviendas(censistas, 3, listaViviendas, LEN, opcionesViviendas);
-				system("pause");
+				printf("|[> 5 <] --| LISTAR CENSISTAS <|\n\n"
+						"|[1] >- | LISTAR CENSISTAS Y SUS CASAS CENSADAS |\n"
+						"|[2] >- | INFORMAR CENSISTAS CON MAS CENSOS REALIZADOS |\n"
+						"|[6] >- | SALIR <|\n\n"
+						"|[INGRESE LA OPCION]<|:");
+
+				fflush(stdin);
+				scanf("%d", &opcion);
+
+				switch (opcion)
+				{
+					case 1:
+						clear();
+						listarCensistasViviendas(censistas, 3, listaViviendas, LEN, opcionesViviendas);
+						system("pause");
+					break;
+
+					case 2:
+						indiceEspacioLleno = buscarEspacioLleno(listaViviendas, LEN);
+
+						if (indiceEspacioLleno != VACIO)
+						{
+							clear();
+							contarCensosRealizados(listaViviendas, LEN, &censosRealizadosAna, &censosRealizadosJuan, &censosRealizadosSol);
+							if (censosRealizadosAna > censosRealizadosJuan && censosRealizadosAna > censosRealizadosSol)
+							{
+								printf("|[> 2 <] --| INFORMAR CENSISTAS CON MAS CENSOS REALIZADOS <|\n\n"
+										"[ANA]: %d Censos realizados.\n"
+										, censosRealizadosAna);
+								listarCensistaMasCensos((*(censistas)), censistas, 3, listaViviendas, LEN, opcionesViviendas);
+							}
+							else
+							{
+								if (censosRealizadosJuan > censosRealizadosAna && censosRealizadosJuan > censosRealizadosSol)
+								{
+									printf("|[> 2 <] --| INFORMAR CENSISTAS CON MAS CENSOS REALIZADOS <|\n\n"
+											"[JUAN]: %d Censos realizados.\n"
+											, censosRealizadosJuan);
+									listarCensistaMasCensos((*(censistas + 1)), censistas, 3, listaViviendas, LEN, opcionesViviendas);
+								}
+								else
+								{
+									printf("|[> 2 <] --| INFORMAR CENSISTAS CON MAS CENSOS REALIZADOS <|\n\n"
+											"[SOL]: %d Censos realizados.\n"
+											, censosRealizadosSol);
+									listarCensistaMasCensos((*(censistas + 2)), censistas, 3, listaViviendas, LEN, opcionesViviendas);
+								}
+							}
+							system("pause");
+						}
+						else
+						{
+							clear();
+							printf("|<------   | - NO HAY VIVIENDAS EN LISTA - |   ------>|\n\n");
+							printf("|<(Imposible informar)>|\n");
+							system("pause");
+						}
+					break;
+
+				}
 			break;
 
 			case 6:

@@ -138,8 +138,10 @@ int ordenarViviendas(sVivienda* lista, int longitud);
 /// @param legajosCensista Puntero a estructura de array de los diferentes censistas.
 /// @param longitud Tamaño del array de los diferentes censistas
 /// @return 0
-int listarCensistas(sCensista* legajosCensista, int longitud);
+int listarCensistaMasCensos(sCensista legajosCensista, sCensista* listaLegajosCensista, int longitud, sVivienda* listaViviendas, int longitudViviendas, sTipoVivienda* listaOpcionViviendas);
 
 int listarCensistasViviendas(sCensista* legajosCensista, int longitud, sVivienda* listaViviendas, int longitudViviendas, sTipoVivienda* listaOpcionViviendas);
+
+int contarCensosRealizados (sVivienda* lista, int longitud, int* censosRealizadosAna, int* censosRealizadosJuan, int* censosRealizadosSol);
 
 #endif /* CENSO_H_ */

@@ -625,25 +625,44 @@ int ordenarViviendas(sVivienda* lista, int longitud)
 	return 0;
 }
 
-int listarCensistas(sCensista* legajosCensista, int longitud)
+int listarCensistaMasCensos(sCensista legajosCensista, sCensista* listaLegajosCensista, int longitud, sVivienda* listaViviendas, int longitudViviendas, sTipoVivienda* listaOpcionViviendas)
 {
-	int i;
+	int j;
+	int indiceOpcionVivienda;
+	int indiceNombreCensista;
 
-	printf("======================================================\n"
-		   "||LEGAJO     ||NOMBRE     ||EDAD    ||NUMERO        ||\n"
-		   "======================================================\n");
+			printf("======================================================\n"
+				   "||LEGAJO     ||NOMBRE     ||EDAD    ||NUMERO        ||\n"
+				   "======================================================\n");
+			printf("||%-11d||%-11s||%-8d||%-14s||\n"
+					, legajosCensista.legajoCensista
+					, legajosCensista.nombre
+					, legajosCensista.edad
+					, legajosCensista.telefono);
 
-	for (i = 0; i < longitud; i++)
-	{
-		printf("||%-11d||%-11s||%-8d||%-14s||\n"
-				, (*(legajosCensista + i)).legajoCensista
-				, (*(legajosCensista + i)).nombre
-				, (*(legajosCensista + i)).edad
-				, (*(legajosCensista + i)).telefono);
-	}
+			printf("=====================================================================================================\n"
+				   "||ID     ||CALLE              ||PERSONAS  ||HABITACIONES  ||TIPO DE VIVIENDA    ||LEGAJO CENSISTA  ||\n"
+				   "=====================================================================================================\n");
 
-	printf("======================================================\n");
+			for (j = 0; j < longitudViviendas; j++)
+			{
+				if (legajosCensista.legajoCensista == (*(listaViviendas + j)).legajoCensista && (*(listaViviendas + j)).idVivienda != VACIO)
+				{
+					indiceOpcionVivienda = indiceTipoVivienda((*(listaViviendas + j)).tipoVivienda, listaOpcionViviendas, 4);
+					indiceNombreCensista = indiceCensista((*(listaViviendas + j)).legajoCensista, listaLegajosCensista, 3);
 
+					printf("||%-7d||%-19s||%-10d||%-14d||%-20s||%d | %-11s||\n" //
+					, (*(listaViviendas + j)).idVivienda
+					, (*(listaViviendas + j)).calle
+					, (*(listaViviendas + j)).cantidadPersonas
+					, (*(listaViviendas + j)).cantidadHabitaciones
+					, (*(listaOpcionViviendas + indiceOpcionVivienda)).descripcionVivienda
+					, (*(listaViviendas + j)).legajoCensista
+					, (*(listaLegajosCensista + indiceNombreCensista)).nombre);
+
+				}
+			}
+			printf("=====================================================================================================\n\n");
 	return 0;
 }
 
@@ -689,5 +708,47 @@ int listarCensistasViviendas(sCensista* legajosCensista, int longitud, sVivienda
 			}
 			printf("=====================================================================================================\n\n");
 		}
+	return 0;
+}
+
+int contarCensosRealizados (sVivienda* lista, int longitud, int* censosRealizadosAna, int* censosRealizadosJuan, int* censosRealizadosSol)
+{
+	int i;
+	*censosRealizadosAna = 0;
+	*censosRealizadosJuan = 0;
+	*censosRealizadosSol = 0;
+
+	for (i = 0; i < longitud; i++)
+	{
+		if ((*(lista + i)).legajoCensista == 100 && (*(lista + i)).idVivienda != VACIO)
+		{
+			*censosRealizadosAna = *censosRealizadosAna + 1;
+		}
+
+		switch((*(lista + i)).legajoCensista)
+		{
+			case 100:
+				if ((*(lista + i)).idVivienda != VACIO)
+				{
+					*censosRealizadosAna = *censosRealizadosAna + 1;
+				}
+			break;
+
+			case 101:
+				if ((*(lista + i)).idVivienda != VACIO)
+				{
+					*censosRealizadosJuan = *censosRealizadosJuan + 1;
+				}
+			break;
+
+			case 102:
+				if ((*(lista + i)).idVivienda != VACIO)
+				{
+					*censosRealizadosSol = *censosRealizadosSol + 1;
+				}
+			break;
+		}
+	}
+
 	return 0;
 }

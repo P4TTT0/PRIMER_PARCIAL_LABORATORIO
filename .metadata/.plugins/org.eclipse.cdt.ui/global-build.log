@@ -1580,3 +1580,100 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
 gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
 Info: Nothing to build for PARCIAL_[0]
+09:16:26 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'contarCensosRealizados':
+..\src\censo.c:709:3: error: expected expression before '}' token
+  709 |   }
+      |   ^
+..\src\censo.c:709:3: error: label at end of compound statement
+..\src\censo.c:711:1: warning: control reaches end of non-void function [-Wreturn-type]
+  711 | }
+      | ^
+09:16:43 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+09:32:29 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'contarCensosRealizados':
+..\src\censo.c:725:4: error: duplicate case value
+  725 |    case 101:
+      |    ^~~~
+..\src\censo.c:718:4: note: previously used here
+  718 |    case 101:
+      |    ^~~~
+09:32:49 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+09:36:01 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+09:45:05 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'listarCensistaMasCensos':
+..\src\censo.c:652:84: error: incompatible type for argument 2 of 'indiceCensista'
+  652 |      indiceNombreCensista = indiceCensista((*(listaViviendas + j)).legajoCensista, legajosCensista, 3);
+      |                                                                                    ^~~~~~~~~~~~~~~
+      |                                                                                    |
+      |                                                                                    sCensista {aka struct <anonymous>}
+..\src\censo.c:295:57: note: expected 'sCensista *' {aka 'struct <anonymous> *'} but argument is of type 'sCensista' {aka 'struct <anonymous>'}
+  295 | int indiceCensista(int indiceLegajoCensista, sCensista* legajosCensista, int longitudCensita)
+      |                                              ~~~~~~~~~~~^~~~~~~~~~~~~~~
+..\src\censo.c:661:27: error: invalid operands to binary + (have 'sCensista' {aka 'struct <anonymous>'} and 'int')
+  661 |      , (*(legajosCensista + indiceNombreCensista)).nombre);
+      |                           ^
+09:48:06 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+In file included from ..\src\PARCIAL_[0].c:15:
+..\src\censo.h:141:67: error: conflicting types for 'legajosCensista'
+  141 | int listarCensistaMasCensos(sCensista legajosCensista, sCensista* legajosCensista, int longitud, sVivienda* listaViviendas, int longitudViviendas, sTipoVivienda* listaOpcionViviendas);
+      |                                                        ~~~~~~~~~~~^~~~~~~~~~~~~~~
+..\src\censo.h:141:39: note: previous definition of 'legajosCensista' was here
+  141 | int listarCensistaMasCensos(sCensista legajosCensista, sCensista* legajosCensista, int longitud, sVivienda* listaViviendas, int longitudViviendas, sTipoVivienda* listaOpcionViviendas);
+      |                             ~~~~~~~~~~^~~~~~~~~~~~~~~
+09:48:34 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input.o" "..\\src\\input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\desarrollo.o" "..\\src\\desarrollo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'listarCensistaMasCensos':
+..\src\censo.c:652:84: error: incompatible type for argument 2 of 'indiceCensista'
+  652 |      indiceNombreCensista = indiceCensista((*(listaViviendas + j)).legajoCensista, legajosCensista, 3);
+      |                                                                                    ^~~~~~~~~~~~~~~
+      |                                                                                    |
+      |                                                                                    sCensista {aka struct <anonymous>}
+..\src\censo.c:295:57: note: expected 'sCensista *' {aka 'struct <anonymous> *'} but argument is of type 'sCensista' {aka 'struct <anonymous>'}
+  295 | int indiceCensista(int indiceLegajoCensista, sCensista* legajosCensista, int longitudCensita)
+      |                                              ~~~~~~~~~~~^~~~~~~~~~~~~~~
+..\src\censo.c:661:27: error: invalid operands to binary + (have 'sCensista' {aka 'struct <anonymous>'} and 'int')
+  661 |      , (*(legajosCensista + indiceNombreCensista)).nombre);
+      |                           ^
+09:48:52 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+..\src\censo.c: In function 'listarCensistaMasCensos':
+..\src\censo.c:661:27: error: invalid operands to binary + (have 'sCensista' {aka 'struct <anonymous>'} and 'int')
+  661 |      , (*(legajosCensista + indiceNombreCensista)).nombre);
+      |                           ^
+09:49:04 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\censo.o" "..\\src\\censo.c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
+09:50:00 **** Incremental Build of configuration Debug for project PARCIAL_[0] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PARCIAL_[0].o" "..\\src\\PARCIAL_[0].c" 
+gcc -o PARCIAL_[0].exe "src\\PARCIAL_[0].o" "src\\censo.o" "src\\desarrollo.o" "src\\input.o" 
